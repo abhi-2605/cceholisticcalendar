@@ -22,7 +22,7 @@ body {
     /* filter: alpha(opacity=60); */
     border: 10px none;
     border-radius: 8px;
-    color: black;
+    color: rgb(104, 230, 230);
     padding: 2%;
     margin: auto;
     position: relative;
