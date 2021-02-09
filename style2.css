@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    background-image: url(./white.jpg);
+    background-image: url(./pexels-tirachard-kumtanom-733857.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -44,12 +44,6 @@ body {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-}
-
-#event,
-#date {
-    /* width: 50%;
-    text-align: center; */
 }
 
 input[type=text]:focus {
