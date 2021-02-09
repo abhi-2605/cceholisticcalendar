@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCE HOLISTIC CALENDAR</title>
+    <link rel="stylesheet" href="./style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+        
+        .topnav a {
+            float: left;
+            text-align: center;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="topnav">
+        <a class href="./index.html">Log out</a>
+        <a href="./notification.html">TO SEND NOTIFICATION</a>
+
+    </div>
+    <div class="container">
+        <h1>UPDATE EVENT</h1>
+        <br>
+        <label for="DATE"><b>DATE</b></label>
+        <input type="date" placeholder="dd/mm/yyy" id="date" required>
+        <br>
+        <br>
+        <label for="psw"><b>Event</b></label>
+        <input type="text" placeholder="text" id="event" required>
+        <br>
+        <br>
+        <button class="add">Add</button>
+    </div>
+
+
+</body>
+
+</html>
