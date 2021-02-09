@@ -76,5 +76,5 @@ input[type=text]:focus {
     width: 20px;
     height: 20px;
     border-radius: 45%;
-    background-color: white;
+    background-color: black;
 }
