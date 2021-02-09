@@ -49,8 +49,8 @@ body {
 
 #event,
 #date {
-    width: 50%;
-    text-align: center;
+    /* width: 50%;
+    text-align: center; */
 }
 
 input[type=text]:focus {
@@ -76,7 +76,7 @@ input[type=date]:focus {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    width: 60%;
+    width: 100%;
     border-radius: 12px;
     text-align: center;
     height: 2em;
