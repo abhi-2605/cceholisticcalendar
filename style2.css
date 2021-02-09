@@ -76,4 +76,8 @@ input[type=date]:focus {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    width: 60%;
+    border-radius: 12px;
+    text-align: center;
+    height: 2em;
 }
