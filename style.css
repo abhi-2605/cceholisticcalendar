@@ -22,7 +22,7 @@ body {
     /* filter: alpha(opacity=60); */
     border: 10px none;
     border-radius: 8px;
-    color: aliceblue;
+    color: black;
     padding: 2%;
     margin: auto;
     position: relative;
@@ -44,7 +44,7 @@ body {
 }
 
 body {
-    background-image: url(./Blue-And-Black-Wallpaper-04-2560x1024-1.png);
+    background-image: url(./white.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
