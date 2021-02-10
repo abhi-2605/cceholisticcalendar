@@ -12,7 +12,7 @@
     <header class="header">
         CCE HOLISTIC CALENDAR
     </header>
-    <div class="container">
+    <div class="contain">
         <h1 id="notif">PROMPT</h1>
 
         <br>
@@ -25,9 +25,31 @@
         <input type="text" placeholder="text" id="event" required>
         <br>
         <br>
-        <button class="add">Send</button>
-    </div>
+        <button class="submit-button state-0" id="bui"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
 
+    </div>
+    <script>
+        const button = document.querySelector('.submit-button'),
+            stateMsg = document.querySelector('.pre-state-msg');
+
+        const updateButtonMsg = function() {
+            button.classList.add('state-1', 'animated');
+
+            setTimeout(finalButtonMsg, 2000);
+        };
+
+        const finalButtonMsg = function() {
+            button.classList.add('state-2');
+
+            setTimeout(setInitialButtonState, 2000);
+        };
+
+        const setInitialButtonState = function() {
+            button.classList.remove('state-1', 'state-2', 'animated');
+        };
+
+        button.addEventListener('click', updateButtonMsg);
+    </script>
 </body>
 
 </html>
