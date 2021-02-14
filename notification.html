@@ -27,13 +27,13 @@
         <br>
         <label for="psw"><b>Description</b></label>
         <br>
-        <input type="text" placeholder="text" id="event" required>
+        <input type="text" placeholder="text" id="descr" required>
         <br>
         <br>
         <button class="submit-button state-0" id="bui"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
 
     </div>
-    <script>
+    <!-- <script>
         const button = document.querySelector('.submit-button'),
             stateMsg = document.querySelector('.pre-state-msg');
 
@@ -54,7 +54,34 @@
         };
 
         button.addEventListener('click', updateButtonMsg);
-    </script>
+    </script> -->
+
+
+
+
+
 </body>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+<script src="./pun2.js"></script> 
 
 </html>

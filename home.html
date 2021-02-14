@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="./style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
     <style>
         .topnav {
             overflow: hidden;
@@ -59,35 +73,30 @@
         <br>
         <label for="psw"><b>Description</b></label>
         <br>
-        <input type="text" placeholder="text" id="event" required>
+        <input type="text" placeholder="text" id="descr" required>
         <br>
         <br>
         <button class="submit-button state-0" id="bui"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">Sending...</span><span class="done-state-msg hide">Done!</span></button>
     </div>
     </div>
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
-    <script>
-        const button = document.querySelector('.submit-button'),
-            stateMsg = document.querySelector('.pre-state-msg');
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
 
-        const updateButtonMsg = function() {
-            button.classList.add('state-1', 'animated');
 
-            setTimeout(finalButtonMsg, 2000);
-        };
 
-        const finalButtonMsg = function() {
-            button.classList.add('state-2');
 
-            setTimeout(setInitialButtonState, 2000);
-        };
-
-        const setInitialButtonState = function() {
-            button.classList.remove('state-1', 'state-2', 'animated');
-        };
-
-        button.addEventListener('click', updateButtonMsg);
-    </script>
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+<script src="./pun.js"></script> 
 </html>
