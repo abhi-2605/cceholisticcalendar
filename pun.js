@@ -55,4 +55,4 @@ button.classList.remove('state-1', 'state-2', 'animated');
 };
 
 button.addEventListener('click', updateButtonMsg);
-button.addEventListener('click', updateButtonMsgNotifi);
+// button.addEventListener('click', updateButtonMsg);
