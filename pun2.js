@@ -31,6 +31,13 @@ console.log("guis")
         description: details
     })
     .then(function() {
+      var da = document.getElementById("date");
+      var ti = document.getElementById("event");
+      var de = document.getElementById("descr");
+      da.value="";
+      ti.value="";
+      de.value="";
+      alert("updated new event")
         console.log("Doc successful");
     })
     .catch(function(error) {

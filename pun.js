@@ -33,6 +33,18 @@ console.log("guis")
     })
     .then(function() {
         console.log("Doc successful");
+        // document.getElementById("date").reset()
+        // date
+        // document.getElementById("event").reset();
+        // document.getElementById("descr").reset();
+        var da = document.getElementById("date");
+        var ti = document.getElementById("event");
+        var de = document.getElementById("descr");
+        da.value="";
+        ti.value="";
+        de.value="";
+        alert("updated new event")
+
     })
     .catch(function(error) {
        console.error("Error writing doc", error);
