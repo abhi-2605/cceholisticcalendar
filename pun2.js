@@ -26,7 +26,7 @@ const updateButtonMsg = function() {
 
 console.log("guis")
     db.collection("notifications").doc((date+title+details).split(" ").join("")).set({
-        event_date: da_te,
+      noti_date: da_te,
         title: title,
         description: details
     })
