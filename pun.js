@@ -21,11 +21,13 @@ const updateButtonMsg = function() {
     var date = document.getElementById("date").value;
   var title = document.getElementById("event").value;
   var details = document.getElementById("descr").value;
+  var da_te =new Date(date);
+  // console.log(da_te)
 
-
+// console.log(typeof da_te);
 console.log("guis")
     db.collection("events").doc((date+title+details).split(" ").join("")).set({
-        event_date: date,
+        event_date: da_te,
         title: title,
         description: details
     })

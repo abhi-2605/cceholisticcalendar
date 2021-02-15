@@ -21,11 +21,12 @@ const updateButtonMsg = function() {
     var date = document.getElementById("date").value;
   var title = document.getElementById("event").value;
   var details = document.getElementById("descr").value;
+  var da_te =new Date(date);
 
 
 console.log("guis")
     db.collection("notifications").doc((date+title+details).split(" ").join("")).set({
-        event_date: date,
+        event_date: da_te,
         title: title,
         description: details
     })
@@ -56,3 +57,38 @@ button.classList.remove('state-1', 'state-2', 'animated');
 
 button.addEventListener('click', updateButtonMsg);
 // button.addEventListener('click', updateButtonMsg);
+
+
+// {
+//   "rules": {
+//      "users": {
+        
+//         "$uid": {
+//            ".write": "$uid === auth.uid",
+//            ".read": true
+//         }
+        
+//      }
+//   }
+// }
+
+
+
+
+// rules_version = '2';
+// 2
+// service cloud.firestore {
+// 3
+//   match /databases/{database}/documents {
+// 4
+//     match /{document=**} {
+// 5
+//       allow read, write: if
+// 6
+//           request.time < timestamp.date(2021, 3, 11);
+// 7
+//     }
+// 8
+//   }
+// 9
+// }
